@@ -1,0 +1,15 @@
+[diff]
+	tool = WinMerge
+[difftool]
+    prompt = false
+[difftool "WinMerge"]
+	cmd = 'C:/Program Files/WinMerge/WinMergeU.exe' -e -r -u -x -wl -wr -dl \"Comparison/$MERGED\" -dr \"Base/$MERGED\" \"$LOCAL\" \"$REMOTE\"
+    trustExitCode = false
+[merge]
+	tool = WinMerge
+	keepBackup = false
+[mergetool]
+    prompt = false
+[mergetool "WinMerge"]
+	cmd = 'C:/Program Files/WinMerge/WinMergeU.exe' \"$MERGED\"
+    trustExitCode = false
